@@ -1,0 +1,73 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: rgb(34, 36, 56);
+  min-height: 100vh;
+  overflow-x:hidden;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  background-image: url('./imagini/logo192.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 44em;
+  background-blend-mode:multiply;
+}
+
+.header {
+  width: 100vw;
+  background-color: rgb(12, 14, 24);
+}
+.nav-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.nav-flex-container .logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-flex-container .logo-wrapper .title {
+  color: rgb(13, 255, 255);
+  font-weight: bold;
+  font-size: 2rem;
+}
+::marker{color:aqua;font-size:1.6rem;}
+.nav-flex-container .logo-wrapper .image {
+  width: 32px;
+  height: 32px;
+}
+.main {
+  width: 47%;
+  margin-inline: auto;
+  height: 100vh;
+
+}
+.h1 {
+  font-size: 4rem;
+}
+.list {
+  padding: 2em;
+}
+.list li {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+.list li:hover::marker{color:rgb(37, 18, 121);}
+.footer {
+  width: 100vw;
+  display: grid;
+  place-content: center;
+  
+  background-color: rgb(44, 34, 11);
+}
+.footer-item {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
